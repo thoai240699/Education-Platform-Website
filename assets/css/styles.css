@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625;
+}
+
+body {
+  font-size: 1.6 rem;
+  font-family: 'Poppins', sans-serif;
+}
+/* Common */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+}
+/* Header */
+.header .body {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
