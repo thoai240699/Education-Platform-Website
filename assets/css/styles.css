@@ -11,6 +11,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 /* Common */
+a {
+  text-decoration: none;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -24,4 +28,14 @@ body {
 }
 .nav {
   margin-left: auto;
+}
+.nav a {
+  padding: 8px 21px;
+  color: #5f5b53;
+}
+.nav a:hover,
+.nav li.active a {
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
 }
