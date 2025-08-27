@@ -5,6 +5,9 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --font-heading: 'Sen', sans-serif;
+}
 
 body {
   font-size: 1.6rem;
@@ -75,4 +78,90 @@ a {
 .header .sign-up-btn {
   margin-left: 49px;
   min-width: 144px;
+}
+/* Hero */
+.hero {
+  padding-top: 56px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .media-block .hero-summaries {
+  position: absolute;
+  padding: 28px 24px;
+  bottom: 48px;
+  left: 300px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+  width: 270px;
+}
+.hero .hero-summaries .item {
+  display: flex;
+}
+.hero-summaries .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summaries .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff9e8;
+}
+.hero-summaries .item:nth-of-type(2) .icon {
+  background-color: #fcefff;
+}
+.hero-summaries .item:nth-of-type(3) .icon {
+  background-color: #ebeaff;
+}
+
+.hero-summaries .info {
+  margin-left: 16px;
+}
+.hero-summaries .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 185.714%; /* 185.714% */
+}
+/* Hero right */
+.hero .content-block {
+  width: 52%;
+  padding: 64px 0 0 130px;
+}
+.content-block .title {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+.content-block .desc {
+  margin: 22px 0;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.66; /* 166.667% */
+}
+.content-block .cta-group {
+  margin: 38px 0;
 }
